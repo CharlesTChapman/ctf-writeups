@@ -1,3 +1,4 @@
+<!--
 ---
 slug: "picoctf-buffer-overflow-0"
 title: "picoCTF — buffer overflow 0"
@@ -9,6 +10,7 @@ tags: ["pwn", "buffer overflow", "stack"]
 tools: ["pwntools", "pwndbg", "gdb"]
 summary: "A walkthrough of a classic stack-based buffer overflow — overwriting adjacent stack memory to trigger a win condition."
 ---
+-->
 
 # picoCTF — buffer overflow 0
 
