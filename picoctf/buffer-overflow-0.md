@@ -6,8 +6,7 @@ date: "2025-06-23"
 ctf: "picoCTF"
 challenge: "buffer overflow 0"
 difficulty: "beginner"
-tags: ["pwn", "buffer overflow", "stack"]
-tools: ["pwntools", "pwndbg", "gdb"]
+tags: ["buffer overflow", "stack"]
 summary: "A walkthrough of a classic stack-based buffer overflow — overwriting adjacent stack memory to trigger a win condition."
 ---
 -->
@@ -22,7 +21,6 @@ summary: "A walkthrough of a classic stack-based buffer overflow — overwriting
 | Category | PWN |
 | Difficulty | Beginner |
 | Topics | Stack buffer overflow |
-| Tools | pwntools, pwndbg |
 
 ---
 
@@ -30,7 +28,7 @@ summary: "A walkthrough of a classic stack-based buffer overflow — overwriting
 
 The source code in C is provided. The first step is understanding what the program is.
 
-First off, within the `main` method, the program loads the values of the flag.txt file stored in the same directory into a `flag` variable.
+First off, within the `main` function, the program loads the values of the flag.txt file stored in the same directory into a `flag` variable.
 
 ```c
 FILE *f = fopen("flag.txt","r");
@@ -44,13 +42,13 @@ exit(0);
 fgets(flag,FLAGSIZE_MAX,f);
 ```
 
-Next, the program sets up a signal to run the `sigsegv_handler` method when the program touches memory it is not supposed to (SIGSEGV).
+Next, the program sets up a signal to run the `sigsegv_handler` function when the program touches memory it is not supposed to (SIGSEGV).
 
 ```c
 signal(SIGSEGV, sigsegv_handler);
 ```
 
-The `sigsegv_handler` method prints the flag value directly.
+The `sigsegv_handler` function prints the flag value directly.
 
 ```c
 void sigsegv_handler(int sig) {
@@ -62,7 +60,7 @@ void sigsegv_handler(int sig) {
 
 This showed me the goal of the challenge: Simply raise a SIGSEGV error by touching memory that I am not supposed to.
 
-From here, I found this was possible in the conveniently named `vuln` method which copies its input into a 16-byte buffer with no bounds checking, which would allow for a buffer overflow to overwrite the return address if the input is greater than 15 characters (16 minus the trailing null byte) plus the 4 byte (x86) pointer value that sits between the buffer and the return address.
+From here, I found this was possible in the conveniently named `vuln` function which copies its input into a 16-byte buffer with no bounds checking, which would allow for a buffer overflow to overwrite the return address if the input is greater than 15 characters (16 minus the trailing null byte) plus the 4 byte (x86) pointer value that sits between the buffer and the return address.
 
 ```c
 void vuln(char *input){
@@ -71,7 +69,7 @@ void vuln(char *input){
 }
 ```
 
-Back in the `main` method, the program takes an input from the user, stores that input in a 100 byte buffer, and passes it to the `vuln` method.
+Back in the `main` function, the program takes an input from the user, stores that input in a 100 byte buffer, and passes it to the `vuln` function.
 
 ```c
 printf("Input: ");
@@ -81,7 +79,7 @@ gets(buf1);
 vuln(buf1);
 ```
 
-This means that, if this input is greater than 19 characters, it will overflow the buffer inside the `vuln` method raising a SIGSEGV error by overwriting the return address and printing the flag.
+This means that, if this input is greater than 19 characters, it will overflow the buffer inside the `vuln` function raising a SIGSEGV error by overwriting the return address and printing the flag.
 
 ---
 
@@ -117,16 +115,18 @@ Input: abcdefghijklmnopqrst
 FLAG{abcdef}
 ```
 
+---
+
 ## What I Learned
 
 - **Stack layout on x86.** The buffer is followed by 4 bytes of saved registers/pointers, then the saved return address. Knowing that ordering and how many bytes each contains is what tells you how many bytes of input it takes to reach and overwrite the return address (16 + 4 = 20 here).
-- **Vulnerable C Methods.** Both `gets()` and `strcpy()` copy without checking the destination size. `gets()` reads arbitrary-length input into a fixed buffer, and `strcpy()` copies until a null byte regardless of how big the destination is.
+- **Vulnerable C functions.** Both `gets()` and `strcpy()` copy without checking the destination size. `gets()` reads arbitrary-length input into a fixed buffer, and `strcpy()` copies until a null byte regardless of how big the destination is.
 
 ---
 
 ## References
 
-- [picoCTF - buffer overflow 0](https://learn.cylabacademy.org/library/257?page=1&search=buff&workspace=true)
+- [picoCTF - buffer overflow 0](https://learn.cylabacademy.org/library/257?page=1&workspace=true)
 - [Smashing The Stack For Fun And Profit](https://inst.eecs.berkeley.edu/~cs161/archive/fa08/papers/stack_smashing.pdf)
     - Learning about stack layouts in x86, specifically the pointer bytes that sit between the buffer and the return address.
 - [Common C Code Vulnerabilities and Mitigations](https://int0x33.medium.com/day-49-common-c-code-vulnerabilities-and-mitigations-7eded437ca4a)
