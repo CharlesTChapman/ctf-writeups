@@ -7,7 +7,7 @@ ctf: "picoCTF"
 challenge: "buffer overflow 1"
 difficulty: "beginner"
 tags: ["pwn", "buffer overflow", "stack"]
-tools: ["pwndbg", "gdb", "pwn"]
+tools: ["pwndbg", "gdb", "pwntools"]
 summary: "Overwriting adjacent stack memory to direct program to new function."
 ---
 -->
@@ -22,7 +22,7 @@ summary: "Overwriting adjacent stack memory to direct program to new function."
 | Category | PWN |
 | Difficulty | Beginner |
 | Topics | Stack buffer overflow |
-| Tools | GDB, pwndbg |
+| Tools | GDB, pwndbg, pwntools |
 
 ---
 
@@ -160,7 +160,7 @@ Success! The return address had been overwritten and the `win` function was call
 
 - **How to find offsets.** In the previous challenge, the offset was equal to the buffer size + ebp size. Here that was not the case as the program added in extra bytes for alignment. Hence, I had to use pwndbg to find the offset by reading the function's assembly code.
 - **How to use GDB to find function memory addresses.** This challenge was my first time using GDB to find  addresses for functions in the binary.
-- **How to use pwn to write exploits.** This was also my first time using pwn to write an exploit. While this case was a fairly simple exploit, I learned about the exploit writing process and what information is needed before writing an exploit.
+- **How to use pwntools to write exploits.** This was also my first time using pwntools to write an exploit. While this case was a fairly simple exploit, I learned about the exploit writing process and what information is needed before writing an exploit.
 
 ---
 
