@@ -10,10 +10,10 @@ Technical writeups documenting my work through CTF challenges. Focus areas: bina
 
 | Challenge | CTF | Difficulty | Topics | Tools |
 |-----------|-----|------------|--------|-------|
-| [buffer overflow 0](./picoctf/buffer-overflow-0/buffer-overflow-0.md) | picoCTF | Beginner | stack overflow | |
-| [buffer overflow 1](./picoctf/buffer-overflow-1/buffer-overflow-1.md) | picoCTF | Beginner | stack overflow | pwntools, GDB, pwndbg |
-| [buffer overflow 2](./picoctf/buffer-overflow-2/buffer-overflow-2.md) | picoCTF | Beginner | stack overflow | pwntools, GDB, pwndbg |
-| [buffer overflow 3](./picoctf/buffer-overflow-3/buffer-overflow-3.md) | picoCTF | Beginner | stack overflow, canary | pwntools, GDB, pwndbg |
+| [buffer overflow 0](./picoctf/buffer-overflow-0/writeup.md) | picoCTF | Beginner | stack overflow | |
+| [buffer overflow 1](./picoctf/buffer-overflow-1/writeup.md) | picoCTF | Beginner | stack overflow | pwntools, GDB, pwndbg |
+| [buffer overflow 2](./picoctf/buffer-overflow-2/writeup.md) | picoCTF | Beginner | stack overflow | pwntools, GDB, pwndbg |
+| [buffer overflow 3](./picoctf/buffer-overflow-3/writeup.md) | picoCTF | Beginner | stack overflow, canary | pwntools, GDB, pwndbg |
 
 ### Web
 
