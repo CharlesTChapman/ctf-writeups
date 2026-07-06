@@ -2,7 +2,7 @@
 ---
 slug: "picoctf-buffer-overflow-0"
 title: "picoCTF — buffer overflow 0"
-date: "2025-06-23"
+date: "2026-06-23"
 ctf: "picoCTF"
 challenge: "buffer overflow 0"
 difficulty: "beginner"
