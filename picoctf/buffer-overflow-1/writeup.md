@@ -5,8 +5,7 @@ title: "picoCTF — buffer overflow 1"
 date: "2026-06-24"
 ctf: "picoCTF"
 challenge: "buffer overflow 1"
-difficulty: "beginner"
-tags: ["pwn", "buffer overflow", "stack"]
+tags: ["ret2win", "pwn", "buffer overflow"]
 tools: ["pwndbg", "gdb", "pwntools"]
 summary: "Overwriting adjacent stack memory to direct program to new function."
 ---
@@ -19,8 +18,7 @@ summary: "Overwriting adjacent stack memory to direct program to new function."
 | Field | Detail |
 |-------|--------|
 | CTF | picoCTF |
-| Category | PWN |
-| Difficulty | Beginner |
+| Category | ret2win |
 | Topics | Stack buffer overflow |
 | Tools | GDB, pwndbg, pwntools |
 

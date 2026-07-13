@@ -8,15 +8,16 @@ Technical writeups documenting my work through CTF challenges. Focus areas: bina
 
 ### PWN / Binary Exploitation
 
-| Challenge | CTF | Difficulty | Topics | Tools |
+| Challenge | CTF | Category | Topics | Tools |
 |-----------|-----|------------|--------|-------|
-| [buffer overflow 0](./picoctf/buffer-overflow-0/writeup.md) | picoCTF | Beginner | stack overflow | |
-| [buffer overflow 1](./picoctf/buffer-overflow-1/writeup.md) | picoCTF | Beginner | stack overflow | pwntools, GDB, pwndbg |
-| [buffer overflow 2](./picoctf/buffer-overflow-2/writeup.md) | picoCTF | Beginner | stack overflow | pwntools, GDB, pwndbg |
-| [buffer overflow 3](./picoctf/buffer-overflow-3/writeup.md) | picoCTF | Beginner | stack overflow, canary | pwntools, GDB, pwndbg |
-| [binary gauntlet 0](./picoctf/binary-gauntlet-0/writeup.md) | picoCTF | Beginner | buffer overflow, binary reversing | pwntools, ghidra |
-| [binary gauntlet 1](./picoctf/binary-gauntlet-1/writeup.md) | picoCTF | Beginner | ret2shellcode, buffer overflow | pwntools, ghidra |
+| [buffer overflow 0](./picoctf/buffer-overflow-0/writeup.md) | picoCTF | ret2win | stack overflow | |
+| [buffer overflow 1](./picoctf/buffer-overflow-1/writeup.md) | picoCTF | ret2win | stack overflow | pwntools, GDB, pwndbg |
+| [buffer overflow 2](./picoctf/buffer-overflow-2/writeup.md) | picoCTF | ret2win | stack overflow | pwntools, GDB, pwndbg |
+| [buffer overflow 3](./picoctf/buffer-overflow-3/writeup.md) | picoCTF | ret2win | stack overflow, canary | pwntools, GDB, pwndbg |
+| [binary gauntlet 0](./picoctf/binary-gauntlet-0/writeup.md) | picoCTF | ret2win | buffer overflow, binary reversing | pwntools, ghidra |
+| [binary gauntlet 1](./picoctf/binary-gauntlet-1/writeup.md) | picoCTF | ret2shellcode | ret2shellcode, buffer overflow | pwntools, ghidra |
 
+<!--
 ### Web
 
 | Challenge | CTF | Difficulty | Topics | Tools |
@@ -26,11 +27,12 @@ Technical writeups documenting my work through CTF challenges. Focus areas: bina
 
 | Challenge | CTF | Difficulty | Topics | Tools |
 |-----------|-----|------------|--------|-------|
+-->
 
 ---
 
 ## About
 
-Cybersecurity student at Northeastern University (Khoury College of Computer Sciences), concentration in Cyber Operations. Working toward exploit development and vulnerability research. All work performed in authorized lab environments.
+Cybersecurity student at Northeastern University (Khoury College of Computer Sciences), concentration in Cyber Operations. Working toward exploit development and vulnerability research.
 
 [LinkedIn](https://www.linkedin.com/in/charlestchapman/)

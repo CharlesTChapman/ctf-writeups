@@ -21,6 +21,7 @@ summary: "Reversing a binary to find vulnerabilities and overwriting the return 
 | CTF | picoCTF |
 | Category | ret2shellcode |
 | Topics | Stack buffer overflow |
+| Tools | pwntools, Ghidra |
 
 ---
 

@@ -5,9 +5,8 @@ title: "picoCTF — buffer overflow 0"
 date: "2026-06-23"
 ctf: "picoCTF"
 challenge: "buffer overflow 0"
-difficulty: "beginner"
-tags: ["buffer overflow", "stack"]
-summary: "A walkthrough of a classic stack-based buffer overflow — overwriting adjacent stack memory to trigger a win condition."
+tags: ["ret2win", "buffer overflow"]
+summary: "A classic stack-based buffer overflow — overwriting adjacent stack memory to trigger a win condition."
 ---
 -->
 
@@ -18,8 +17,7 @@ summary: "A walkthrough of a classic stack-based buffer overflow — overwriting
 | Field | Detail |
 |-------|--------|
 | CTF | picoCTF |
-| Category | PWN |
-| Difficulty | Beginner |
+| Category | ret2win |
 | Topics | Stack buffer overflow |
 
 ---

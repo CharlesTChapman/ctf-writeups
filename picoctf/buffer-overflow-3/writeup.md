@@ -6,7 +6,7 @@ date: "2026-07-05"
 ctf: "picoCTF"
 challenge: "buffer overflow 3"
 difficulty: "beginner"
-tags: ["pwn", "buffer overflow", "stack"]
+tags: ["ret2win", "pwn", "buffer overflow", "canary"]
 tools: ["pwndbg", "gdb", "pwntools"]
 summary: "Brute forcing a canary in a buffer overflow exploit."
 ---
@@ -19,9 +19,8 @@ summary: "Brute forcing a canary in a buffer overflow exploit."
 | Field | Detail |
 |-------|--------|
 | CTF | picoCTF |
-| Category | PWN |
-| Difficulty | Beginner |
-| Topics | Stack buffer overflow |
+| Category | ret2win |
+| Topics | Stack buffer overflow, canary |
 | Tools | pwndbg, gdb, pwntools |
 
 ---

@@ -5,12 +5,24 @@ title: "picoCTF — binary gauntlet 0"
 date: "2026-07-06"
 ctf: "picoCTF"
 challenge: "binary gauntlet 0"
-difficulty: "beginner"
-tags: ["pwn", "buffer overflow", "stack"]
+tags: ["ret2win", "pwn", "buffer overflow"]
 tools: ["pwntools", "ghidra"]
 summary: "Using Ghidra to reverse a binary and find it's vulnerabilites."
 ---
 -->
+
+# picoCTF — binary gauntlet 0
+
+## Overview
+
+| Field | Detail |
+|-------|--------|
+| CTF | picoCTF |
+| Category | ret2win |
+| Topics | Stack buffer overflow |
+| Tools | pwntools, Ghidra |
+
+---
 
 ## Reversing Binary with Ghidra
 
