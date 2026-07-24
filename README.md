@@ -21,7 +21,7 @@ Technical writeups documenting my work through CTF challenges. Focus areas: bina
 
 | Challenge | CTF | Category | Topics | Tools |
 |-----------|-----|------------|--------|-------|
-| [carnage](./TryHackMe/carnage/writeup.md) | TryHackMe | Networking | Wireshark |
+| [carnage](./TryHackMe/carnage/writeup.md) | TryHackMe | Networking | network traffic analysis | Wireshark |
 
 <!--
 ### Reverse Engineering
