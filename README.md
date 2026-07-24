@@ -15,17 +15,18 @@ Technical writeups documenting my work through CTF challenges. Focus areas: bina
 | [buffer overflow 2](./picoctf/buffer-overflow-2/writeup.md) | picoCTF | ret2win | stack overflow | pwntools, GDB, pwndbg |
 | [buffer overflow 3](./picoctf/buffer-overflow-3/writeup.md) | picoCTF | ret2win | stack overflow, canary | pwntools, GDB, pwndbg |
 | [binary gauntlet 0](./picoctf/binary-gauntlet-0/writeup.md) | picoCTF | ret2win | buffer overflow, binary reversing | pwntools, ghidra |
-| [binary gauntlet 1](./picoctf/binary-gauntlet-1/writeup.md) | picoCTF | ret2shellcode | ret2shellcode, buffer overflow | pwntools, ghidra |
+| [binary gauntlet 1](./picoctf/binary-gauntlet-1/writeup.md) | picoCTF | ret2shellcode | buffer overflow, binary reversing | pwntools, ghidra |
 
-<!--
 ### Web
 
-| Challenge | CTF | Difficulty | Topics | Tools |
+| Challenge | CTF | Category | Topics | Tools |
 |-----------|-----|------------|--------|-------|
+| [carnage](./TryHackMe/carnage/writeup.md) | TryHackMe | Networking | Wireshark |
 
+<!--
 ### Reverse Engineering
 
-| Challenge | CTF | Difficulty | Topics | Tools |
+| Challenge | CTF | Category | Topics | Tools |
 |-----------|-----|------------|--------|-------|
 -->
 
