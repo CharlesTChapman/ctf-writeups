@@ -164,7 +164,7 @@ Success! The return address had been overwritten and the `win` function was call
 
 ## References
 
-- [picoCTF - buffer overflow 1](https://learn.cylabacademy.org/library/258?page=1&workspace=true)
+- [picoCTF - buffer overflow 1](https://learn.cylabacademy.org/library/258)
 - [Exploiting with pwndbg](https://blog.xpnsec.com/pwndbg/)
     - Learning about how to use pwndbg on a similar problem, and how to understand output.
 - [How to List All Functions in a Program Using GDB: A Step-by-Step Guide](https://linuxvox.com/blog/ask-gdb-to-list-all-functions-in-a-program/)

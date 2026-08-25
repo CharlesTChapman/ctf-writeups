@@ -83,4 +83,4 @@ Running my exploit prints the flag.
 
 ## References
 
-- [picoCTF - binary gauntlet 0](https://learn.cylabacademy.org/library/167?page=1&workspace=true)
+- [picoCTF - binary gauntlet 0](https://learn.cylabacademy.org/library/167)

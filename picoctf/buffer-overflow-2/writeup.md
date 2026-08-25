@@ -185,4 +185,4 @@ My flag is printed, showing my exploit was successful.
 ---
 
 ## References
-- [picoCTF - buffer overflow 2](https://learn.cylabacademy.org/library/259?page=1&workspace=true)
+- [picoCTF - buffer overflow 2](https://learn.cylabacademy.org/library/259)

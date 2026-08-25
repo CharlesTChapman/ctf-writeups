@@ -124,7 +124,7 @@ FLAG{abcdef}
 
 ## References
 
-- [picoCTF - buffer overflow 0](https://learn.cylabacademy.org/library/257?page=1&workspace=true)
+- [picoCTF - buffer overflow 0](https://learn.cylabacademy.org/library/257)
 - [Smashing The Stack For Fun And Profit](https://inst.eecs.berkeley.edu/~cs161/archive/fa08/papers/stack_smashing.pdf)
     - Learning about stack layouts in x86, specifically the pointer bytes that sit between the buffer and the return address.
 - [Common C Code Vulnerabilities and Mitigations](https://int0x33.medium.com/day-49-common-c-code-vulnerabilities-and-mitigations-7eded437ca4a)

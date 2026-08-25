@@ -111,4 +111,4 @@ This pops a shell on the server running the binary, allowing me to `cat flag.txt
 
 ## References
 
-- [picoCTF - binary gauntlet 1](https://learn.cylabacademy.org/library/126?page=1&workspace=true)
+- [picoCTF - binary gauntlet 1](https://learn.cylabacademy.org/library/126)

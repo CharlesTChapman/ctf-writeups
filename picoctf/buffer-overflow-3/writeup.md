@@ -162,4 +162,4 @@ Running this exploit prints the flag.
 ---
 
 ## References
-- [picoCTF - buffer overflow 3](https://learn.cylabacademy.org/library/260?page=1&workspace=true)
+- [picoCTF - buffer overflow 3](https://learn.cylabacademy.org/library/260)
