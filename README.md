@@ -17,7 +17,7 @@ Technical writeups documenting my work through CTF challenges. Focus areas: bina
 | [binary gauntlet 0](./picoctf/binary-gauntlet-0/writeup.md) | picoCTF | ret2win | buffer overflow, binary reversing | pwntools, ghidra |
 | [binary gauntlet 1](./picoctf/binary-gauntlet-1/writeup.md) | picoCTF | ret2shellcode | buffer overflow, binary reversing | pwntools, ghidra |
 
-### Web
+### Foresnics
 
 | Challenge | CTF | Category | Topics | Tools |
 |-----------|-----|------------|--------|-------|
