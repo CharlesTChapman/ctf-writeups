@@ -24,6 +24,8 @@ Technical writeups documenting my work through CTF challenges. Focus areas: bina
 | [carnage](./TryHackMe/carnage/writeup.md) | TryHackMe | Forensics | network traffic analysis | Wireshark |
 | [Wireshark doo dooo do doo](./picoctf/wireshark-doo-dooo-do-doo/writeup.md) | picoCTF | Forensics | network traffic analysis | Wireshark |
 | [Wireshark twoo twooo two twoo](./picoctf/wireshark-twoo-twooo-two-twoo/writeup.md) | picoCTF | Forensics | network traffic Analysis | Wireshark |
+| [WebNet0](./picoctf/WebNet0/writeup.md) | picoCTF | Forensics | network traffic analysis | Wireshark |
+| [WebNet1](./picoctf/WebNet1/writeup.md) | picoCTF | Forensics | network traffic analysis and steganography | Wireshark, exiftool |
 
 <!--
 ### Reverse Engineering

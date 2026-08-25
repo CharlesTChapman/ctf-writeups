@@ -19,7 +19,7 @@ summary: "Finding the flag in a packet capture using Wireshark."
 | Field | Detail |
 |-------|--------|
 | CTF | picoCTF |
-| Category | Networking |
+| Category | Forensics |
 | Tools | Wireshark |
 
 ---

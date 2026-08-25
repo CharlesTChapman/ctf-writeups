@@ -19,7 +19,7 @@ summary: "Identifying DNS exfiltration in a packet capture to extract a base64-e
 | Field | Detail |
 |-------|--------|
 | CTF | picoCTF |
-| Category | Networking |
+| Category | Forensics |
 | Tools | Wireshark |
 
 ---
